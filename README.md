@@ -5,6 +5,8 @@
 
 [Materialize](http://materializecss.com/), a CSS Framework based on material design
 
+Jules And Ben
+
 ### Current Version : v0.97.7
 
 ## Sass Requirements:
