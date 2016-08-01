@@ -1,0 +1,22 @@
+<apex:page standardController="Backlog__c"  sidebar="false"
+           recordSetVar="items" showheader="false" standardStylesheets="false"
+           docType="html-5.0">
+    <table id="backitemTable"  class="display card-panel white">
+        <thead>
+            <tr>
+                <th>Idea Name</th>
+                <th>Description</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <apex:repeat value="{!items}" id="backItemsRepeat" var="i">
+                <tr>
+                    <td>{!i.name}</td>
+                    <td>{!i.Description__c}</td>
+                    <td>{!i.Point__c}</td>
+                </tr>
+            </apex:repeat>
+        </tbody>
+    </table>
+</apex:page>
